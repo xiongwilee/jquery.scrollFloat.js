@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class=" js csstransforms3d"><head>
+  <meta charset="utf-8">
+  
+  <!-- disable zooming -->
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=0">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <script src="../jquery.scrollFloat.js"></script>
+
+  <title>scrollFloat</title>
+
+    <style>
+    *,html,body{
+      padding:0px;
+      margin: 0px;
+    }
+    .wrapper{
+      height: 2000px;
+    }
+    .scrollFLoat-test{
+      width: 300px;
+      height: 500px;
+      background: #cc0000;
+    }
+    </style>
+
+</head>
+<body>
+  <div class="wrapper">
+    <div id="scrollFolatTest" class="scrollFLoat-test">
+    </div>
+  </div>
+  <script>
+    (function($){
+      $.scrollFloat({
+        ele:"#scrollFolatTest",
+        scrTop:'30'
+      })
+    })(jQuery)
+  </script>
+</body>
+</html>

@@ -5,7 +5,8 @@
  * @param {Object} options 选项参数
  * @demo
  * new $.scrollFloat({
- *	ele:document.getElementById('test')
+ *	ele:'#test',
+ *	scrTop:30
  * })
  * 
  */
