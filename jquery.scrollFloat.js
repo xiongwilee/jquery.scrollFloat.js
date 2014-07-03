@@ -45,7 +45,7 @@
 				me.$ele.css({
 					position:'',
 					top:'',
-					left:'',
+					left:''
 				})
 			}else if(bottomPos<0 && !me.srcollStatus){
 				me.srcollStatus = true;
@@ -53,7 +53,7 @@
 				me.$ele.css({
 					position:'fixed',
 					top:'-'+me.Height+'px',
-					left:me.Offset.left,
+					left:me.Offset.left
 				})
 				me._slide(-me.Height,me.scrTop,function(to){
 					me.$ele.css({
