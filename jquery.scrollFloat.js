@@ -96,6 +96,7 @@
 							left:me.Offset.left
 						})
 
+<<<<<<< HEAD
 						if(this.showAll){
 							me._slide(-me.Height,me.scrTop,function(to){
 								me.$ele.css({
@@ -122,6 +123,28 @@
 						left = me.Offset.left;
 					$(window).on('scroll',function(evt){
 						me.setSrcoll()
+=======
+		this.setSrcoll = function(bottomPos){
+			var me = this;
+			if(bottomPos>=0 && me.srcollStatus){
+				me.srcollStatus = false;
+				me.$ele.css({
+					position:'',
+					top:'',
+					left:''
+				})
+			}else if(bottomPos<0 && !me.srcollStatus){
+				me.srcollStatus = true;
+				me.Offset.left = me.$ele.offset().left;
+				me.$ele.css({
+					position:'fixed',
+					top:'-'+me.Height+'px',
+					left:me.Offset.left
+				})
+				me._slide(-me.Height,me.scrTop,function(to){
+					me.$ele.css({
+						top:to+'px'
+>>>>>>> FETCH_HEAD
 					})
 				},
 				init : function(){
